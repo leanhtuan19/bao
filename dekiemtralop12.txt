@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Kiểm Tra Lớp 12</title>
+</head>
+<body>
+    <h1>PHIẾU ĐĂNG KÝ DỰ TUYỂN</h1>
+
+    <form>
+        <h2>I. THÔNG TIN HỌC SINH</h2>
+        <div class="introduce">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name">
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob">
+            <label for="gender">Giới tính:</label>
+            <input type="text" id="gender" name="gender">
+        </div>
+        <div class="introduce">
+            <label for="address">Hộ khẩu thường trú:</label>
+            <input type="text" id="address" name="address">
+            <label for="district">Huyện:</label>
+            <input type="text" id="district" name="district">
+            <label for="province">Tỉnh:</label>
+            <input type="text" id="province" name="province">
+        </div>
+
+        <h2>II. THÔNG TIN ĐĂNG KÝ DỰ TUYỂN</h2>
+        <label>Thí sinh có dùng kết quả để xst tuyển ĐH,CĐ <input type="checkbox" name="pdkdt" value="pdk"></label>
+        <div class="group-list">
+            <input type="radio" id="option1" name="program" value="thpt">
+            <label for="option1">Thí sinh đăng học chương trình THPT</label>
+            <input type="radio" id="option2" name="program" value="gdtx">
+            <label for="option2">Thí sinh đăng học chương trình GDTX</label>
+            <input type="radio" id="option3" name="program" value="self-student">
+            <label for="option3">Thí sinh tự do chưa tốt nghiệp THPT</label>
+            <input type="radio" id="option4" name="program" value="self-graduate">
+            <label for="option4">Thí sinh tự do đã tốt nghiệp THPT</label>
+        </div>
+
+        <strong>Đăng ký bài thi/môn thi:</strong>
+        <p>a. Đăng ký bài thi</p>
+        <div class="group-list">
+            <label><input type="radio" name="exam-subject" value="toan"> Toán</label>
+            <label><input type="radio" name="exam-subject" value="van"> Văn</label>
+            <label><input type="radio" name="exam-subject" value="khtn"> KHTN</label>
+            <label><input type="radio" name="exam-subject" value="khxh"> KHXH</label>
+        </div>
+        
+        <p>Ngoại ngữ (lựa chọn một trong các ngoại ngữ sau):</p>
+        <div class="group-list">
+            <label><input type="radio" name="language" value="anh"> Tiếng Anh</label>
+            <label><input type="radio" name="language" value="nga"> Tiếng Nga</label>
+            <label><input type="radio" name="language" value="phap"> Tiếng Pháp</label>
+            <label><input type="radio" name="language" value="duc"> Tiếng Đức</label>
+            <label><input type="radio" name="language" value="trung"> Tiếng Trung</label>
+            <label><input type="radio" name="language" value="nhat"> Tiếng Nhật</label>
+        </div>
+        
+        <p>b. Đăng ký môn thành phần trong bài thi tổ hợp:</p>
+        <div class="group-list">
+            <label>Vật lý <input type="checkbox" name="exam" value="vatly"></label>
+            <label>Hóa học <input type="checkbox" name="exam" value="hoahoc"></label>
+            <label>Sinh học <input type="checkbox" name="exam" value="sinhhoc"></label>
+            <label>Lịch sử<input type="checkbox" name="exam" value="lichsu"></label>
+            <label>Địa lý <input type="checkbox" name="exam" value="dia"></label>
+            <label>GDKTPL <input type="checkbox" name="exam" value="gdk"></label>
+        </div>
+        <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </div>
+    </form>
+</body>
+</html>
